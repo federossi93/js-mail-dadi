@@ -39,17 +39,21 @@ console.log(giocatore);
 let computer = Math.round(Math.random()* 6 + 1)
 console.log(computer);
 
-let vincitore = document.querySelector('h2')
+let vincitore = document.getElementById('risultato')
 
-let perdente = document.querySelector('h3')
+let perdente = document.getElementById('risultato')
+
+let pareggio = document.getElementById('risultato')
 
 if(giocatore > computer){
     console.log('giovìcatore vince');
-    vincitore.innerHTML = 'giocatore vince'
-    perdente.innerHTML = giocatore + ' vs ' + computer
-}else{
+    perdente.innerHTML = 'giocatore vince: ' + giocatore + ' vs ' + computer
+}else if(giocatore = computer){
+    pareggio.innerHTML ='pareggio: ' + giocatore + ' vs ' + computer
+}
+else{
     console.log('computer vince');
     vincitore.innerHTML = 'computer vince'
-    perdente.innerHTML = computer + ' vs ' + giocatore
+    perdente.innerHTML = 'computer vince: ' + computer + ' vs ' + giocatore
 }
 
