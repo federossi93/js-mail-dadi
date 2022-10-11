@@ -14,21 +14,16 @@ for (let i = 0; i < emailList.length; i++){
 
     const emailGiusta = emailList[i]
 
-
-
     if(email == emailGiusta){
         console.log('Email coretta');
         testo.innerHTML = 'bravo'
         break
-    }else if(email != emailGiusta){
+    }
+    else{
         console.log('Email sbagliata');
         testo.innerHTML = 'sbagliato'
     }
 
 }
-
-
-
-
 
 //stampa un messaggio appropriato sull’esito del controllo.
