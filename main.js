@@ -1,4 +1,4 @@
-/*//Chiedi all’utente la sua email.
+//Chiedi all’utente la sua email.
 let email = prompt('Inserisci la tua email')
 
 
@@ -24,7 +24,7 @@ for (let i = 0; i < emailList.length; i++){
         testo.innerHTML = 'sbagliato'
     }
     //stampa un messaggio appropriato sull’esito del controllo.
-} */
+} 
 
 //Generare un numero random da 1 a 6,
 //sia per il giocatore sia per il computer.
